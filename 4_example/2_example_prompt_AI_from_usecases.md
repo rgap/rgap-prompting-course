@@ -4,12 +4,12 @@
 
 <CONTEXT>
 Generar IA completa para un sitio web (browser). Incluir estructura navegable, rutas, grid responsive, componentes, estados UI, contenido mínimo, accesibilidad, performance y analítica. Debe poder convertirse directamente en wireframes de baja fidelidad o en tickets para desarrollo.
+
 PROJECT_CONTEXT: Las pequeñas y medianas empresas (PYMES) enfrentan barreras al acceder a crédito o financiación rápido debido a procesos burocráticos y lentos en la solicitud de crédito. "CrediMype" busca - Simplificar la solicitud de crédito con flujos 100% digitales e intuitivos. - Acelerar la revisión de solicitudes con validaciones automáticas. - Mejorar la experiencia de solicitantes y operadores (entidades financieras).
 SYSTEM_TYPE: Onboarding Digital de Crédito
 BUSINESS_DOMAIN: Servicios financieros (Fintech)
 </CONTEXT>
 
-<THEME>grayscale</THEME>
 <TARGET>browser</TARGET>
 
 <INPUT>
@@ -84,7 +84,6 @@ USER PERSONA: Operador/Analista de la Entidad Financiera
     UC-16 · Exportar bandeja
     Objetivo: Exportar CSV.
     Postcondiciónes: Archivo descargado y evento auditado.
-
 </INPUT>
 
 <OUTPUT>
@@ -176,8 +175,6 @@ Notas para handoff:
 - Nombre de rutas/tokens (slug recomendados)
 - Convenciones de nombre (BEM/utility), z-index para overlays
 - Estados de overlays: modal/dialog/sheet (foco atrapado, escape)
-- Tokens sugeridos (solo si THEME=brand): palette (primary/secondary/neutral), spacing, radius, sombras, uso
-- Si THEME=grayscale: sin tokens de color; usar tonos neutros y énfasis por tipografía/espaciado
 
 Para páginas CORE, añadir:
 
@@ -192,7 +189,7 @@ Para páginas CORE, añadir:
 - Especificar Secciones con CTAs/microcopy/elementos/datos/interacciones
 - Inventariar Componentes con props/variantes/reglas; detallar formularios/validaciones
 - Completar Estados UI, Contenido mínimo, A11y/SEO, Performance/Cache y Analítica
-- Declarar Dependencias y Notas de handoff; si THEME=brand, proponer tokens
+- Declarar Dependencias y Notas de handoff
 </STEPS>
 
 <CHECK>

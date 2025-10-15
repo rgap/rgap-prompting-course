@@ -9,7 +9,6 @@ SYSTEM_TYPE: [...]
 BUSINESS_DOMAIN: [...]
 </CONTEXT>
 
-<THEME>brand|grayscale</THEME>
 <TARGET>browser</TARGET>
 
 <INPUT>[pega aquí tus funcionalidades y casos de uso]</INPUT>
@@ -89,8 +88,6 @@ Notas para handoff:
 - Nombre de rutas/tokens (slug recomendados)
 - Convenciones de nombre (BEM/utility), z-index para overlays
 - Estados de overlays: modal/dialog/sheet (foco atrapado, escape)
-- Tokens sugeridos (solo si THEME=brand): palette (primary/secondary/neutral), spacing, radius, sombras, uso
-- Si THEME=grayscale: sin tokens de color; usar tonos neutros y énfasis por tipografía/espaciado
 
 Para páginas CORE, añadir:
 - Resumen rápido (≤120 chars)
@@ -104,7 +101,7 @@ Para páginas CORE, añadir:
 - Especificar Secciones con CTAs/microcopy/elementos/datos/interacciones
 - Inventariar Componentes con props/variantes/reglas; detallar formularios/validaciones
 - Completar Estados UI, Contenido mínimo, A11y/SEO, Performance/Cache y Analítica
-- Declarar Dependencias y Notas de handoff; si THEME=brand, proponer tokens
+- Declarar Dependencias y Notas de handoff
 </STEPS>
 
 <CHECK>
