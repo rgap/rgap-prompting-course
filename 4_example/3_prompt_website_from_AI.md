@@ -23,10 +23,8 @@ mode: grayscale | brand
 Desarrollador Frontend con conocimientos sólidos de UX/UI.
 </ROLE>
 
-<INTENT>
-A partir de la IA provista en <INPUT>, generar un prototipo web estático, responsive y accesible (WCAG AA),
-usando SOLO HTML y CSS (JavaScript únicamente si es estrictamente necesario), con ITCSS y BEM.
-Crear una página HTML por cada ruta definida en la IA y enlazarlas entre sí según la navegación.
+<INTENT> 
+A partir de la IA provista en <INPUT>, generar un prototipo web estático, responsive y accesible (WCAG AA), usando HTML y CSS, y **JS simple y mínimo** cuando aporte navegación, validaciones básicas o estados UI (sin frameworks), con ITCSS y BEM. Crear una página HTML por cada ruta definida en la IA y enlazarlas entre sí según la navegación.
 </INTENT>
 
 <FILE_STRUCTURE>
@@ -34,7 +32,7 @@ La salida **DEBE** seguir exactamente esta estructura (nombres en minúsculas co
 - `index.html` (en la raíz del proyecto)
 - `pages/` (todas las demás páginas HTML aquí; una por cada ruta)
 - `styles/` (capas ITCSS: 0_settings → 6_utilities + main.css)
-- `scripts/` (solo si es estrictamente necesario)
+- `scripts/` (JS simple, p. ej. main.js y módulos mínimos si aplica)
 
 Reglas de rutas/enlaces (usar SIEMPRE rutas relativas):
 - Desde `index.html` hacia páginas internas: `pages/<nombre>.html`
@@ -57,8 +55,8 @@ Reglas de rutas/enlaces (usar SIEMPRE rutas relativas):
 6) Accesibilidad: foco visible, labels/for-id correctos, aria-* cuando corresponda, orden de tab lógico, errores con aria-describedby.
 7) (Opcional) JS mínimo y aislado si la interacción lo exige, sin comprometer accesibilidad.
 8) Verificar que **TODOS** los enlaces internos existan y usen las rutas relativas definidas en <FILE_STRUCTURE>. No generar reportes.
-
-<PARAMETERS>
+8) Verificar que **TODOS** los enlaces internos existan y usen las rutas relativas definidas en <FILE_STRUCTURE> y dirijan donde deban dirigir, y lo mismo en las funciones JS. No generar reportes.
+</STEPS>
 
 <CONSTRAINTS>
     - Sin frameworks ni librerías externas.
