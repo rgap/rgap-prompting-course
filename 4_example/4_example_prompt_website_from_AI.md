@@ -57,6 +57,7 @@ Reglas de rutas/enlaces (usar SIEMPRE rutas relativas):
 7) (Opcional) JS mínimo y aislado si la interacción lo exige, sin comprometer accesibilidad.
 8) Verificar que **TODOS** los enlaces internos existan y usen las rutas relativas definidas en <FILE_STRUCTURE>. No generar reportes.
 8) Verificar que **TODOS** los enlaces internos existan y usen las rutas relativas definidas en <FILE_STRUCTURE> y dirijan donde deban dirigir, y lo mismo en las funciones JS. No generar reportes.
+9) **Demo completa (autorrelleno de campos)**: añadir un módulo JS mínimo (p. ej., `scripts/demo-data.js`) que, al activar un flag (`?demo=1` en la URL o un botón “Rellenar demo”), **precargue valores plausibles** en todos los campos de formularios (inputs, selects, radios, checkboxes), respetando accesibilidad y validaciones. Usar atributos `data-demo`/`data-demo-value` para mapear campos. Debe poder desactivarse (`?demo=0`) y no enviar datos reales por defecto.
 </STEPS>
 
 <CONSTRAINTS>
@@ -73,7 +74,7 @@ Reglas de rutas/enlaces (usar SIEMPRE rutas relativas):
     2) Tokens definidos en settings y uso consistente en las demás capas.
     3) **`index.html` en la raíz** y **todas las páginas adicionales en `pages/`**, enlazadas según la navegación.
     4) Componentes con BEM y estados de interacción accesibles.
-    5) README breve con estructura ITCSS, ubicación de tokens y pautas de accesibilidad.
+    5) README breve con estructura ITCSS, ubicación de los tokens, pautas de accesibilidad **y cómo activar la demo (`?demo=1`)**.
 </DELIVERABLES>
 
 <OUTPUT_FORMAT>
